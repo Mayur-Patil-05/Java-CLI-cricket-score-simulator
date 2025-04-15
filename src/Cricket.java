@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Cricket {
     Scanner sc = new Scanner(System.in);
     int runs;
-    int ball;
+    int runScored;
     int overs;
 
     Cricket(){
@@ -21,26 +21,26 @@ public class Cricket {
     }
 
     public void run(){
-        ball = sc.nextInt();
-        if (ball == 0){
+        runScored = sc.nextInt();
+        if (runScored == 0){
             System.out.println("Dot ball");
         }
-        else if (ball == 1){
+        else if (runScored == 1){
             System.out.println("Single run");
             runs++;
-        } else if (ball==2) {
+        } else if (runScored==2) {
             System.out.println("Double runs");
             runs+=2;
         }
-        else if (ball==3) {
+        else if (runScored==3) {
             System.out.println("Three run");
             runs+=3;
         }
-        else if (ball==4) {
+        else if (runScored==4) {
             System.out.println("Four");
             runs+=4;
         }
-        else if (ball==6) {
+        else if (runScored==6) {
             System.out.println("Six");
             runs+=6;
         }
